@@ -13,7 +13,7 @@ app.factory(breweryService.name, breweryService.func);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/home');
+    // $urlRouterProvider.otherwise('/home');
 
     $stateProvider.state({
         name: 'home',
