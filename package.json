@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/brewclt/website#readme",
   "dependencies": {
-    "@types/node": "^7.0.39"
+    "@types/node": "^7.0.39",
+    "foundation-sites": "^6.4.1",
+    "gulp": "^3.9.1",
+    "gulp-browser": "^3.0.6",
+    "gulp-sass": "^3.1.0"
   }
 }
