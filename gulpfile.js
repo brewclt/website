@@ -36,7 +36,6 @@ gulp.task('assets', function () {
         .pipe(gulp.dest(OUTPUT_DIRECTORY + '/assets'));
 });
 
-
 gulp.task('watch', ['default'], function () {
     gulp.watch('index.html', ['html']);
     gulp.watch('scss/*.scss', ['css']);
