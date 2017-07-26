@@ -89,8 +89,3 @@ app.component('social', {
     templateUrl: 'templates/social.html',
     controller: 'MainController',
 });
-
-app.component('social', {
-    templateUrl: 'templates/social.html',
-    controller: 'MainController',
-});
