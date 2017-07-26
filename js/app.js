@@ -40,6 +40,11 @@ app.component('homePage', {
     controller: 'MainController',
 });
 
+app.component('homeNav', {
+    templateUrl: 'templates/home-nav.html',
+    controller: 'MainController',
+});
+
 app.component('news', {
     templateUrl: 'templates/news.html',
     controller: 'MainController',
