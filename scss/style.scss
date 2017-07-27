@@ -3,7 +3,8 @@
 @include foundation-grid; 
 
 @import "home";
-
+@import "home-nav";
+@import "news";
 
 html {
     height: 100%;
