@@ -1,0 +1,102 @@
+.monthly {
+    @include grid-column(12); 
+    
+    h2 {
+        text-align: center; 
+    }
+
+    .monthBrewImg {
+        @include grid-column(6); 
+        height: 80px; 
+        width: 120px; 
+        border-radius: 6px; 
+        text-align: left; 
+        margin-right: 20px; 
+        padding: 0; 
+    }
+
+}
+
+// ------- media query -----------
+
+@media (min-width: 640px) {
+
+    .monthly {
+        @include grid-column(12); 
+    
+        h2 {
+            text-align: center; 
+        }
+
+        .monthSec {
+            padding-left: 0; 
+        }
+
+        .monthBrewImg {
+            @include grid-column(4); 
+            height: 160px; 
+            width: 300px; 
+            text-align: left; 
+            margin-right: 20px; 
+            margin-left: 0; 
+            padding: 0; 
+            border-radius: 20px; 
+        }
+
+        .name {
+            @include grid-column(6); 
+            text-align: left; 
+            padding-left: 10px;
+            font-size: 1.2em;  
+        }
+
+        .list {
+            @include grid-column(12); 
+        }
+
+    }
+
+}
+
+// ------- media query -----------
+
+@media (min-width: 1440px) {
+
+    .monthly {
+        @include grid-column(3); 
+        // border-left: 1px solid lightgray; 
+    
+        h2 {
+            text-align: center; 
+        }
+
+        .monthSec {
+            padding-left: 0; 
+        }
+
+        .monthBrewImg {
+            @include grid-column(4); 
+            height: 160px; 
+            width: 300px; 
+            // text-align: left; 
+            // margin-right: 20px; 
+            // margin-left: 0; 
+            // padding: 0; 
+            border-radius: 20px; 
+        }
+
+        .name {
+            @include grid-column(4); 
+            text-align: left; 
+            padding-left: 20px;
+            font-size: 1.5em;  
+        }
+
+        .list {
+            padding-left: 10px; 
+            list-style: none; 
+        }
+
+    }
+
+}
