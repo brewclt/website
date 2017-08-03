@@ -13,7 +13,7 @@ app.factory(breweryService.name, breweryService.func);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/home');
+    // $urlRouterProvider.otherwise('/home');
 
     $stateProvider.state({
         name: 'home',
@@ -82,11 +82,6 @@ app.component('brewfooter', {
 
 app.component('about', {
     templateUrl: 'templates/about.html',
-    controller: 'MainController',
-});
-
-app.component('social', {
-    templateUrl: 'templates/social.html',
     controller: 'MainController',
 });
 
