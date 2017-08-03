@@ -1,5 +1,6 @@
 .news {
     @include grid-row(); 
+    height: 100vh;
 
 h1 {
     border-bottom: 1px solid lightgray; 
