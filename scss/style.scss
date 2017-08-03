@@ -3,8 +3,10 @@
 @include foundation-grid; 
 
 @import "home";
+@import "news"; 
+@import "monthly"; 
+@import "articles"; 
 @import "home-nav";
-@import "news";
 @import "footer";
 
 html {
