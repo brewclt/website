@@ -1,0 +1,125 @@
+.articles {
+    @include grid-column(12); 
+    
+    ul {
+        padding-top: 20px; 
+        padding-bottom: 120px; 
+        border-bottom: 1px solid lightgray; 
+        padding-left: 0; 
+    }
+
+    .brewImg {
+        @include grid-column(2); 
+        height: 80px; 
+        width: 120px; 
+        border-radius: 6px; 
+        text-align: left; 
+        margin-right: 0px; 
+        padding: 0; 
+        
+    }
+
+    .content {
+        @include grid-column(6); 
+        text-align: left; 
+        padding-left: 0; 
+        
+    
+        h2 {
+            font-size: 1em; 
+            margin-top: 2px; 
+        }
+
+        p {
+            font-size: 0; 
+        }
+    
+    }
+
+}
+
+
+// ------------- use for media query --------------
+
+@media (min-width: 640px) {
+
+    .articles {
+        @include grid-column(12); 
+        // text-align: left; 
+
+        ul {
+            padding-top: 10px; 
+            padding-bottom: 180px; 
+            border-bottom: 1px solid lightgray; 
+            padding-left: 0; 
+        }
+
+        .brewImg {
+            @include grid-column(4); 
+            height: 160px; 
+            width: 300px;
+            border-radius: 20px;  
+        }
+
+        .content {
+            @include grid-column(6); 
+            text-align: left; 
+            padding-left: 10px; 
+            
+        
+            h2 {
+                font-size: 1.2em; 
+                margin-top: 2px; 
+            }
+
+            p {
+                font-size: 0; 
+            }
+        
+        }
+    }
+
+}
+
+// ------ media query --------------------------
+
+@media (min-width: 1440px) {
+
+    .articles {
+        @include grid-column(8); 
+         border-right: 1px solid lightgray;
+        // text-align: left; 
+
+        ul {
+            padding-top: 10px; 
+            padding-bottom: 220px; 
+            border-bottom: 1px solid lightgray; 
+            padding-left: 0; 
+        }
+
+        .brewImg {
+            @include grid-column(2); 
+            height: 200px; 
+            width: 400px;
+            border-radius: 20px;  
+        }
+
+        .content {
+            @include grid-column(4); 
+            text-align: left; 
+            padding-left: 10px; 
+            
+        
+            h2 {
+                font-size: 1.5em; 
+                margin-top: 2px; 
+            }
+
+            p {
+                font-size: 0; 
+            }
+        
+        }
+    }
+
+}
